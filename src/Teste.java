@@ -1,5 +1,5 @@
 
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -10,9 +10,11 @@ public class Teste {
         //SYSTEM
         Random r = new Random();
         Scanner scanner = new Scanner(System.in);
+        File file = new File(System.getProperty("user.dir") + "/Save.txt");
 
         //CONTROLE
         boolean game = true;
+        boolean load = true;
         boolean validMove = true;
         boolean generatePlayer = false;
         boolean generateRobots = true;
@@ -35,6 +37,43 @@ public class Teste {
         List<Rubble> rubbles = new ArrayList<>();
 
         while (game) {
+            if (load && file.exists()) {
+                FileReader fileReader = new FileReader(file);
+                BufferedReader reader = new BufferedReader(fileReader);
+                String line;
+                int i = 0;
+                List<Integer> list = new ArrayList<>();
+                while ((line = reader.readLine()) != null) {
+                    if (i == 0) {
+                        Player.setX(Integer.parseInt(line));
+                    } else if (i == 1) {
+                        Player.setY(Integer.parseInt(line));
+                    } else if (i == 2) {
+                        Player.setQteSafeTeleport(Integer.parseInt(line));
+                    } else if (i == 3) {
+                        qteRobos = Integer.parseInt(line);
+                    } else {
+                        list.add(Integer.parseInt(line));
+                    }
+                    i++;
+                }
+                for (i = 0;  i < list.size(); i++){
+                    Robot tempRobot = new Robot(list.get(i), list.get(i+1));
+                    if(list.get(i+2)==1){
+                        tempRobot.kill();
+                    }
+                    robots.add(tempRobot);
+                    matriz[tempRobot.getX()][tempRobot.getY()] = 2;
+                    i += 2;
+                }
+                matriz[(linhas / 2)][(colunas / 2)] = 0;
+                matriz[Player.getX()][Player.getY()] = 1;
+                reader.close();
+                fileReader.close();
+                load = false;
+                generatePlayer = false;
+                generateRobots = false;
+            }
             if (generatePlayer) {
                 matriz[(Player.getX())][Player.getY()] = 0;
                 Player.setX(linhas / 2);
@@ -256,7 +295,7 @@ public class Teste {
                         matriz[Player.getX()][Player.getY()] = 1;
                         break;
                     case '+':
-                        if(Player.getQteSafeTeleport() > 0){
+                        if (Player.getQteSafeTeleport() > 0) {
                             matriz[x][y] = 0;
                             Player.safeTeleport(robots, rubbles);
                             matriz[Player.getX()][Player.getY()] = 1;
@@ -346,7 +385,22 @@ public class Teste {
                 }
 
             }
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+//            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            if (!game) {
+                FileWriter fileWriter = new FileWriter(System.getProperty("user.dir") + "/Save.txt");
+                PrintWriter printWriter = new PrintWriter(fileWriter);
+                printWriter.printf("%s" + "%n", Player.getX());
+                printWriter.printf("%s" + "%n", Player.getY());
+                printWriter.printf("%s" + "%n", Player.getQteSafeTeleport());
+                printWriter.printf("%s" + "%n", qteRobos);
+                robots.forEach(item -> {
+                    printWriter.printf("%s" + "%n", item.getX());
+                    printWriter.printf("%s" + "%n", item.getY());
+                    printWriter.printf("%s" + "%n", item.isDead() ? 1 : 0);
+                });
+                printWriter.close();
+                fileWriter.close();
+            }
         }
 
     }
@@ -375,6 +429,10 @@ public class Teste {
 
         public static int getQteSafeTeleport() {
             return qteSafeTeleport;
+        }
+
+        public static void setQteSafeTeleport(int qteSafeTeleport) {
+            Player.qteSafeTeleport = qteSafeTeleport;
         }
 
         public static void resetSafeTeleport() {
