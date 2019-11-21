@@ -385,7 +385,7 @@ public class Teste {
                 }
 
             }
-//            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
             if (!game) {
                 FileWriter fileWriter = new FileWriter(System.getProperty("user.dir") + "/Save.txt");
                 PrintWriter printWriter = new PrintWriter(fileWriter);

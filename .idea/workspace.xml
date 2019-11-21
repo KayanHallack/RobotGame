@@ -7,11 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae8c0b6a-9a0a-4daf-9168-417bdf7ace30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Teste_jar/Teste.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Teste_jar/Teste.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Teste/Teste$Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teste/Teste$Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Teste/Teste.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teste/Teste.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Teste.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Teste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+            <state relative-caret-position="207">
+              <caret line="388" column="24" lean-forward="true" selection-start-line="388" selection-start-column="24" selection-end-line="388" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2045#4706#1" />
@@ -196,12 +191,12 @@
       <option name="presentableId" value="Default" />
       <updated>1574103358107</updated>
       <workItem from="1574103359416" duration="4439000" />
-      <workItem from="1574179176175" duration="55543000" />
+      <workItem from="1574179176175" duration="55599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59982000" />
+    <option name="totallyTimeSpent" value="60038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -358,8 +353,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Teste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+        <state relative-caret-position="207">
+          <caret line="388" column="24" lean-forward="true" selection-start-line="388" selection-start-column="24" selection-end-line="388" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2045#4706#1" />
