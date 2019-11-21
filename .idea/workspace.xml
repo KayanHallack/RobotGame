@@ -7,6 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae8c0b6a-9a0a-4daf-9168-417bdf7ace30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Teste_jar/Teste.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Teste_jar/Teste.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Teste/Teste$Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teste/Teste$Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Teste/Teste.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teste/Teste.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Teste.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,16 +31,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Teste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="388" column="24" lean-forward="true" selection-start-line="388" selection-start-column="24" selection-end-line="388" selection-end-column="24" />
+            <state relative-caret-position="175">
+              <caret line="496" lean-forward="true" selection-start-line="496" selection-end-line="496" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2045#4706#1" />
                 <element signature="e#2097#3085#1" />
                 <element signature="e#3114#3197#1" />
-                <element signature="e#4849#4894#1" />
-                <element signature="e#5247#11100#0" />
-                <element signature="e#10374#13850#1" />
                 <element signature="e#17493#17494#0" expanded="true" />
                 <element signature="e#17557#17558#0" expanded="true" />
                 <element signature="e#15413#15414#0" expanded="true" />
@@ -191,12 +192,12 @@
       <option name="presentableId" value="Default" />
       <updated>1574103358107</updated>
       <workItem from="1574103359416" duration="4439000" />
-      <workItem from="1574179176175" duration="55599000" />
+      <workItem from="1574179176175" duration="56475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60038000" />
+    <option name="totallyTimeSpent" value="60914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -212,7 +213,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.47790506" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2651391" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.28477904" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -353,16 +354,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Teste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="388" column="24" lean-forward="true" selection-start-line="388" selection-start-column="24" selection-end-line="388" selection-end-column="24" />
+        <state relative-caret-position="175">
+          <caret line="496" lean-forward="true" selection-start-line="496" selection-end-line="496" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2045#4706#1" />
             <element signature="e#2097#3085#1" />
             <element signature="e#3114#3197#1" />
-            <element signature="e#4849#4894#1" />
-            <element signature="e#5247#11100#0" />
-            <element signature="e#10374#13850#1" />
             <element signature="e#17493#17494#0" expanded="true" />
             <element signature="e#17557#17558#0" expanded="true" />
             <element signature="e#15413#15414#0" expanded="true" />

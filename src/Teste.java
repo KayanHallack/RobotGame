@@ -14,6 +14,7 @@ public class Teste {
 
         //CONTROLE
         boolean game = true;
+        boolean save = true;
         boolean load = true;
         boolean validMove = true;
         boolean generatePlayer = false;
@@ -379,6 +380,7 @@ public class Teste {
                             } else if (playAgain == 'n' || playAgain == 'N') {
                                 validInput = true;
                                 game = false;
+                                save = false;
                             }
                         }
                     }
@@ -398,6 +400,9 @@ public class Teste {
                     printWriter.printf("%s" + "%n", item.getY());
                     printWriter.printf("%s" + "%n", item.isDead() ? 1 : 0);
                 });
+                if(!save) {
+                    file.delete();
+                }
                 printWriter.close();
                 fileWriter.close();
             }
@@ -493,7 +498,6 @@ public class Teste {
                 if (!dangersZoneY.contains(robot.getY() - 1)) {
                     dangersZoneY.add(robot.getY() - 1);
                 }
-
             }
 
             while (invalidTeleport) {
