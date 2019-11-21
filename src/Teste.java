@@ -1,5 +1,7 @@
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -400,11 +402,12 @@ public class Teste {
                     printWriter.printf("%s" + "%n", item.getY());
                     printWriter.printf("%s" + "%n", item.isDead() ? 1 : 0);
                 });
-                if(!save) {
-                    file.delete();
-                }
+                fileWriter.flush();
                 printWriter.close();
                 fileWriter.close();
+                if(!save) {
+                    Files.deleteIfExists(Paths.get(file.getPath()));
+                }
             }
         }
 
